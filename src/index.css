@@ -6,8 +6,98 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#ipod-container{
+  position: absolute;
+  background-color: #B9B9B9;
+  height: 60vh;
+  width: 15vw;
+  left: 43%;
+  bottom: 3%;
+  opacity: 1.5;
+  border-radius: 16px;
+  box-shadow: 2px 2px 2px 2px #A2A2AA;
+}
+.display-container{
+  background-color: aqua;
+}
+#display{
+  height: 50%;
+  background-color: azure;
+  width: 95%;
+  margin-left: 6px;
+}
+#action-buttons{
+  height: 50%;
+  display: flex;
+  margin-top:6%;
+  justify-content: space-around;
+}
+.heading-style{
+  font-family: monospace;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.items{
+  margin-bottom: 3%;
+}
+.buttons-sub-container{
+  background-color: azure;
+  width: 90%;
+  height: 80%;
+  border-radius: 50%;
+}
+.position-abs{
+  position: absolute;
+}
+.menu-button{
+  height: 10%;
+  width: 10%;
+  /* background-color: red; */
+  left: 40%;
+  font-size: 1.2rem;
+  color: #B9B9B9;
+  bottom: 32%;
+}
+.prev-button{
+  height: 10vh;
+  width: 10vw;
+  color: #B9B9B9;
+  font-size: 2rem;
+  bottom: 13%;
+  left: 9%;
+ 
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.select-button{
+  height: 12vh;
+  width: 6vw;
+  background-color: #B9B9B9;
+  left: 29.8%;
+  bottom: 15%;
+  border-radius: 50%;
+  /* left: 50px; */
+  /* right 150 */
+
+}
+.next-button{
+  height: 10vh;
+  width: 10vw;
+  
+  color: #B9B9B9;
+  font-size: 2rem;
+  left: 74.8%;
+  bottom: 13%;
+}
+
+
+.playPause-button{
+  height: 10vh;
+  width: 10vw;
+  
+  color: #B9B9B9;
+  font-size: 2rem;
+  left: 42%;
+  bottom: -2%;
 }
