@@ -5,99 +5,261 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("../src/assets/wes-hicks-MEL-jJnm7RQ-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
+
+
 #ipod-container{
   position: absolute;
-  background-color: #B9B9B9;
-  height: 60vh;
-  width: 15vw;
-  left: 43%;
-  bottom: 3%;
+  background-color: ;
+  left: 42.5%;
+  top: 20%;
   opacity: 1.5;
-  border-radius: 16px;
-  box-shadow: 2px 2px 2px 2px #A2A2AA;
+  border-radius: 22px;
+  /* box-shadow: 2px 2px 2px 2px #A2A2AA; */
+  padding: 16px 8px 4px 8px;
+  box-shadow: 0px 0px 12px 2px black;
+  
+  
 }
-.display-container{
-  background-color: aqua;
-}
+
 #display{
-  height: 50%;
-  background-color: azure;
-  width: 95%;
-  margin-left: 6px;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  /* background-image: url("../src/assets/marjanblan-SdW0N-0M0ZA-unsplash.jpg");
+  background-color: white;
+  opacity: .9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+
 }
-#action-buttons{
-  height: 50%;
-  display: flex;
-  margin-top:6%;
-  justify-content: space-around;
-}
-.heading-style{
-  font-family: monospace;
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-.items{
-  margin-bottom: 3%;
-}
+
+
+/*  buttons styling */
 .buttons-sub-container{
-  background-color: azure;
-  width: 90%;
-  height: 80%;
-  border-radius: 50%;
-}
-.position-abs{
-  position: absolute;
+    width: 260px;
+	height: 260px;
+	border: 1px solid rgb(58, 56, 56);
+	margin: 10px auto 0px auto;
+	border-radius: 50%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    /* background-color: rgb(221, 221, 221); */
+
 }
 .menu-button{
-  height: 10%;
-  width: 10%;
-  /* background-color: red; */
-  left: 40%;
-  font-size: 1.2rem;
-  color: #B9B9B9;
-  bottom: 32%;
+    position: absolute;
+	top: 0;
+	height: 25%;
+	align-items: center;
+	font-size: 18px;
+	border: none;
+	background-color: transparent;
+    color: rgb(78, 78, 78);
+    font-size: 1.5rem;
 }
 .prev-button{
-  height: 10vh;
-  width: 10vw;
-  color: #B9B9B9;
-  font-size: 2rem;
-  bottom: 13%;
-  left: 9%;
- 
+    position: absolute;
+	left: 0px;
+	width: 25%;
+	align-items: center;
+	font-size: 30px;
+	border: none;
+	background-color: transparent;
+	color: rgb(78, 78, 78);
 }
 
 .select-button{
-  height: 12vh;
-  width: 6vw;
-  background-color: #B9B9B9;
-  left: 29.8%;
-  bottom: 15%;
-  border-radius: 50%;
-  /* left: 50px; */
-  /* right 150 */
-
+    width: 50%;
+	height: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    color: rgb(78, 78, 78);
+    font-family: monospace;
+    border: 1px solid black;
+    background-color: transparent;
+    font-size: 1.5rem;
 }
 .next-button{
-  height: 10vh;
-  width: 10vw;
-  
-  color: #B9B9B9;
-  font-size: 2rem;
-  left: 74.8%;
-  bottom: 13%;
+    position: absolute;
+	right: 0px;
+	width: 25%;
+	align-items: center;
+	font-size: 30px;
+	border: none;
+	background-color: transparent;
+	color: rgb(78, 78, 78);
+}
+.play-pause-button{
+    position: absolute;
+	bottom: 0px;
+	height: 25%;
+	align-items: center;
+	font-size: 30px;
+	border: none;
+	background-color: transparent;
+	color: rgb(78, 78, 78);
+}
+
+/* display  */
+
+.display-items{
+    position: absolute;
+    z-index: 2;
+    height: 50%;
+    width: 0%;
+	box-shadow: none;
+    overflow-x: hidden;
+}
+.width-50{
+    width: 50%;
+    box-shadow: 0px 0px 12px 1px rgb(82, 82, 82) ;
+}
+
+.menu-divs{
+    height: 20%;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    /* border: 1px solid rgb(190, 190, 190); */
+	box-sizing: border-box;
+}
+.menu-divs p{
+    font-size: 20px;
+    /* overflow-wrap: normal; */
+    margin: 0;
+}
+.music-divs{
+    height: 16.6%;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    
+	box-sizing: border-box;
+}
+.current-option{
+    background-color: #808080;
 }
 
 
-.playPause-button{
-  height: 10vh;
-  width: 10vw;
-  
-  color: #B9B9B9;
-  font-size: 2rem;
-  left: 42%;
-  bottom: -2%;
+/* songs */
+.songs-list-container{
+    height: 100%;
+	overflow-y: scroll;
+}
+.songs-list-container::-webkit-scrollbar {
+    display: none;
+  }
+.songs-list{
+    padding-bottom: 10px;
+	margin: 0px;
+	height: 10%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+    text-decoration: underline;
+}
+.songs{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 50px;
+    font-size: 1.5rem;
+	/* color: white; */
+}
+.current-song{
+    background-color:rgb(78, 78, 78);
+}
+
+/* different screen */
+.screen-game {
+    text-align: center;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+    overflow: hidden;
+    /* font-size: 2.5rem; */
+}
+.screen-game div {
+    text-align: center;
+   font-size: 5.5rem; 
+}
+.screen-game h1{
+    margin: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.album-screen {
+    text-align: center;
+	height: 100%;
+	width: 100%;
+	
+	box-sizing: border-box;
+    overflow: hidden;
+    /* font-size: 2.5rem; */
+}
+.album-screen div {
+    text-align: center;
+   font-size: 5.5rem; 
+}
+.album-screen h1{
+    margin: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.screen-coverflow {
+    text-align: center;
+	height: 100%;
+	width: 100%;
+	
+	box-sizing: border-box;
+    overflow: hidden;
+    /* font-size: 2.5rem; */
+}
+.screen-coverflow div {
+    text-align: center;
+   font-size: 5.5rem; 
+}
+.screen-coverflow h1{
+    margin: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.screen-setting {
+    text-align: center;
+	height: 100%;
+	width: 100%;
+	
+	box-sizing: border-box;
+    overflow: hidden;
+    /* font-size: 2.5rem; */
+}
+.screen-setting div {
+    text-align: center;
+   font-size: 5.5rem; 
+}
+.screen-setting h1{
+    margin: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.music-player{
+    outline: none;
 }
