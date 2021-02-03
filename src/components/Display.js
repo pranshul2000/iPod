@@ -17,6 +17,7 @@ function Display(props) {
         <Menu
           state={state} 
         />
+        {/* defines which component to show  */}
         {state.main_menu_active && state.component_no === 0? <Coverflow /> : ''}
         {state.main_menu_active && state.component_no === 2? <Games /> : ''}
         {state.main_menu_active && state.component_no === 3? <Settings /> : ''}

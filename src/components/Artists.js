@@ -2,7 +2,7 @@ import React from 'react';
 
 function Artist(){
     return(
-        <div></div>
+        <div>Will Be Added Soon...</div>
     );
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 function Favourites(){
     return(
-        <div></div>
+        <div>Feature to be Added soon..</div>
     );
 }
 

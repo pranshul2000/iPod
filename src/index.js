@@ -7,13 +7,13 @@ import 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBnMofuoHhF70zBm4I0T2OQwP2okZRkgzw",
-    authDomain: "ipod-pg.firebaseapp.com",
-    databaseURL: "https://ipod-pg.firebaseio.com",
+    apiKey: process.env.ipod_apiKey,
+    authDomain: process.env.ipod_authDomain,
+    databaseURL:process.env.ipod_databaseURL,
     projectId: "ipod-pg",
-    storageBucket: "ipod-pg.appspot.com",
-    messagingSenderId: "994790141410",
-    appId: "1:994790141410:web:a8303bc4f500edb716ddbb"
+    storageBucket:process.env.ipod_storageBucket,
+    messagingSenderId: process.env.ipod_messagingSenderId,
+    appId: process.env.ipod_appId
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
